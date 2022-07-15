@@ -50,7 +50,7 @@ html{
 	}
 }
 .boton:hover {
-	animation: bounce 2s;
+	animation: bounce 1.5s;
 }
 
 /* INICIO CSS para header en todas las páginas */
