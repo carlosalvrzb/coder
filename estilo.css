@@ -27,11 +27,30 @@ html{
     padding-bottom:15px;
     padding-left:40px;
     padding-right:40px;
-    background-color: rgb(23, 179, 191);
+    background-color:#7f465c;
     border-color: #d8d8d8;
     border-width: 3px;
     border-style: solid;
     border-radius:15px;
+}
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.boton:hover {
+	animation: bounce 2s;
 }
 
 /* INICIO CSS para header en todas las páginas */
