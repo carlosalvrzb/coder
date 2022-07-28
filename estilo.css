@@ -1,13 +1,43 @@
-/* INICIO reseteo y body font guideline para toda la pagina */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* Bootstrap code for css */
+.navbar{
+    background-color: #7f465c;
 }
 
-/* FIN reseteo y body font guidelines para toda la pagina */
+h1{
+    font-size: 40px;
+}
+.col-sm-6{
+    padding: 10px;
+}
+.ol{
+    padding-bottom: 10px;
+}
 
 
+
+.zonadeimg{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- INICIO DE Antiguo código */
 
 /* INICIO GRID PARA TODAS las paginas divididas en secciones */
 .container {
@@ -49,6 +79,20 @@ html{
 		transform: translateY(-10px);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .boton:hover {
 	animation: bounce 1.5s;
 }
