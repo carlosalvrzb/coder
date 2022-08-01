@@ -1,703 +1,617 @@
+@charset "UTF-8";
 /* Bootstrap code for css */
-.navbar{
-    background-color: #7f465c;
+.navbar {
+  background-color: #7f465c;
 }
 
-h1{
-    font-size: 40px;
-}
-.col-sm-6{
-    padding: 10px;
-}
-.ol{
-    padding-bottom: 10px;
+h1 {
+  font-size: 40px;
 }
 
-
-
-.zonadeimg{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    
+.col-sm-6 {
+  padding: 10px;
 }
 
+.ol {
+  padding-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.zonadeimg {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 
 /* -------------------------------- INICIO DE Antiguo código */
-
 /* INICIO GRID PARA TODAS las paginas divididas en secciones */
 .container {
-    display: grid;
+  display: grid;
 }
+
 /* FIN GRID PARA TODAS las paginas divididas en secciones */
-
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
 .boton {
-    text-decoration:none;
-    font-weight: 600;
-    font-size: 16px;
-    color:white;
-    padding-top:15px;
-    padding-bottom:15px;
-    padding-left:40px;
-    padding-right:40px;
-    background-color:#7f465c;
-    border-color: #d8d8d8;
-    border-width: 3px;
-    border-style: solid;
-    border-radius:15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #7f465c;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 15px;
 }
+
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .boton:hover {
-	animation: bounce 1.5s;
+  animation: bounce 1.5s;
 }
 
 /* INICIO CSS para header en todas las páginas */
-.box-1{
-    background-color:gainsboro;
+.box-1 {
+  background-color: gainsboro;
 }
 
-.body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+.body {
+  font-family: sans-serif;
+  font-size: 16px;
 }
+
 nav {
-    padding: 5px 20px;
-}
-ul {
-    list-style-type: none;
-}
-a {
-    color:#7f465c;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-.menu li {
-    font-size: 15px;
-    padding: 15px 5px;
-    white-space: nowrap;
-}
-.logo{
-    padding: 7.5px 10px 7.5px 0;;
+  padding: 5px 20px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #7f465c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu li {
+  font-size: 15px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+.logo {
+  padding: 7.5px 10px 7.5px 0;
+}
 
 /* Mobile menu */
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .toggle {
-    order: 1;
+  order: 1;
 }
+
 .item {
-    width: 100%;
-    text-align: center;
-    order: 3;
-    display: none;
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
 }
+
 .item.active {
-    display: block;
+  display: block;
 }
 
 /* Navbar Toggle */
 .toggle {
-    cursor:pointer;
+  cursor: pointer;
 }
+
 .bars {
-    background: #7f465c;
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
+  background: #7f465c;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
 }
+
 .bars:before,
 .bars:after {
-    background: #7f465c;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
+  background: #7f465c;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
 }
+
 .bars:before {
-    top: 5px;
+  top: 5px;
 }
+
 .bars:after {
-    top: -5px;
+  top: -5px;
 }
-  
+
 /* Tablet menu */
 @media all and (min-width: 468px) {
-    .menu {
-        justify-content: center;
-    }
-  
-    .logo {
-        flex: 1;
-    }
-  
-    .toggle {
-        order: 2;
-    }
-    
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .toggle {
+    order: 2;
+  }
 }
-  
 /* Desktop menu */
 @media all and (min-width: 768px) {
-    .item {
-        display: block;
-        width: auto;
-    }
-    .toggle {
-        display: none;
-    }
-    .logo {
-        order: 0;
-    }
-    .item {
-        order: 1;
-    }
-    .menu li {
-        padding: 15px 10px;
-    }
-    
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
 }
 /* FIN CSS para header en todas las páginas */
-
-
-
-
-
-
-
-
-
 /* INICIO de CSS para pagina de index.html */
-
 /* Mobile Version */
 .sect1-container {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.sect1-container h1{
-    font-size: 40px;
+
+.sect1-container h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.sect1-container ol {
+  font-size: 16px;
+  margin: 30px;
+}
+
+.sect1-container ol li {
+  margin-bottom: 10px;
+}
+
+.elemento1 {
+  margin-bottom: 40px;
+}
+
+.imghp {
+  height: 280px;
+}
+
+.sect2-container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.sect2-container h2 {
+  padding-bottom: 20px;
+}
+
+.sect2-container p {
+  padding-bottom: 20px;
+}
+
+.sect3-container {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.zonadeimg {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.elementos-cajas {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.elementos-cajas {
+  display: flex;
+  flex-flow: column;
+}
+
+.caja {
+  border: solid black;
+  margin: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  width: 260px;
+}
+
+.sect4-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+}
+
+.sect4-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sect4-container p {
+  width: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-container {
+  margin: 10px;
+}
+
+.footer-nav ul li {
+  padding-bottom: 15px;
+}
+
+.footer-redes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tablet version */
+@media all and (min-width: 468px) {
+  .sect1-container h1 {
+    font-size: 60px;
     margin-bottom: 40px;
-}
-.sect1-container ol{
-    font-size: 16px;
-    margin: 30px;
-}
-.sect1-container ol li{
-    margin-bottom: 10px;
-}
-.elemento1{
-    margin-bottom: 40px;
-}
-.imghp{
-    height: 280px;
-}
-
-
-.sect2-container{
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
+  }
+  .sect1-container {
     justify-content: center;
-    text-align: center;
-    padding-top: 15px;
-}
-.sect2-container h2{
+  }
+  .sect1-container ol {
+    font-size: 20px;
+    margin: 30px;
+  }
+  .sect2-container h2 {
     padding-bottom: 20px;
-}
-.sect2-container p{
+    font-size: 30px;
+  }
+  .sect2-container p {
     padding-bottom: 20px;
-    
-}
-
-
-
-
-
-.sect3-container{
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 100px;
-}
-.zonadeimg{
+    font-size: 20px;
+  }
+  /* Sect 3 */
+  .zonadeimg img {
+    height: 350px;
+  }
+  .elementos-cajas {
     display: flex;
     flex-flow: column;
     align-items: center;
-    
-}
-.elementos-cajas{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.elementos-cajas{
-    display: flex;
-    flex-flow: column;
-}
-.caja{
+  }
+  .caja {
     border: solid black;
     margin: 25px;
-    border-radius:15px;
+    border-radius: 15px;
     padding: 10px;
-    width: 260px;
-    
+    width: 300px;
+  }
 }
-
-
-
-
-
-
-
-.sect4-container{
+/* Desktop version */
+@media all and (min-width: 768px) {
+  .sect1-container h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  .sect1-container {
+    justify-content: center;
+  }
+  .sect1-container ol {
+    font-size: 20px;
+    margin: 30px;
+  }
+  .imghp {
+    height: 500px;
+  }
+  .sect2-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .sect2-container h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .sect2-container p {
+    padding-bottom: 20px;
+    font-size: 20px;
+    width: 700px;
+  }
+  .zonadeimg img {
+    height: 450px;
+    margin-bottom: 40px;
+  }
+  .elementos-cajas {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    margin: 20px;
-    justify-content: center;
-}
-.sect4-container h2{
-    text-align: center;
-    margin-bottom: 20px;
-}
-.sect4-container p{
-    width: auto;
-    text-align: center;
-    margin-bottom: 10px;
-    
-}
-
-
-
-
-.footer-container{
-    margin: 10px;
-}
-.footer-nav ul li{
-    padding-bottom: 15px;
-}
-.footer-redes{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-
-/* Tablet version */
-@media all and (min-width: 468px) {
-    .sect1-container h1{
-        font-size: 60px;
-        margin-bottom: 40px;
-    }
-    .sect1-container{
-        justify-content: center;
-    }
-    .sect1-container ol{
-        font-size: 20px;
-        margin: 30px;
-    }
-
-
-
-
-    .sect2-container h2{
-        padding-bottom: 20px;
-        font-size: 30px;
-    }
-    .sect2-container p{
-        padding-bottom: 20px;
-        font-size: 20px;
-        
-    }
-
-
-    /* Sect 3 */
-    .zonadeimg img{
-        height: 350px;
-    }
-    .elementos-cajas{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        
-    }
-    .caja{
-        border: solid black;
-        margin: 25px;
-        border-radius:15px;
-        padding: 10px;
-        width: 300px;
-        
-    }
-    
-}
-/* Desktop version */
-@media all and (min-width: 768px) {
-    .sect1-container h1{
-        font-size: 60px;
-        margin-bottom: 40px;
-        
-    }
-    .sect1-container{
-        justify-content: center;
-    }
-    .sect1-container ol{
-        font-size: 20px;
-        margin: 30px;
-    }
-    .imghp{
-        height: 500px;
-    }
-
-
-
-
-    .sect2-container{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-    .sect2-container h2{
-        padding-bottom: 20px;
-        font-size: 30px;
-    }
-    .sect2-container p{
-        padding-bottom: 20px;
-        font-size: 20px;
-        width: 700px;
-    }
-    
-
-
-
-    .zonadeimg img{
-        height: 450px;
-        margin-bottom: 40px;
-    }
-    .elementos-cajas{    
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-       
-    }
-    
-
-
-    .sect4-container{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-
-    }
-    .sect4-container p{
-        width: 600px;
-        
-    }
-
-
-
-
-
-
-    .footer-nav ul{
-        display: flex;
-        flex-flow: row;
-        margin-top: 20px;
-    }
-    .footer-redes{
-        margin-top: 20px;
-    }
-}
-
-
-
-
-/* FIN de CSS para pagina de index.html */
-
-
-
-
-/* INICIO de CSS para pagina de memorialdigital.html */
-
-
-/* mobile version */
-.md-box-2{
-    margin: 40px;
-}
-
-.md-titulo{
+  }
+  .sect4-container {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-bottom: 15px;
-}
-.md-titulo h1{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.md-sect1-container{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-.ejemplositio{
-    margin-top: 30px;
-    height: 200px;
-}
-
-
-
-/* Tablet version */
-@media all and (min-width: 468px) {
-    .md-titulo h1{
-        font-size: 35px;
-    }
-    .md-titulo p{
-        font-size: 20px;
-    }
-    .ejemplositio{
-        height: 280px;
-    }
-}
-
-
-
-
-/* Desktop version */
-@media all and (min-width: 768px) {
-    .md-sect1-container{
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-    }
-    .ejemplositio{
-        height: 350px;
-    }
-}
-/* FIN de CSS para pagina de memorialdigital.html */
-
-
-
-
-/* INICIO de CSS para pagina de proveedores.html */
-.prov-sect1{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-.prov-sect1 h1{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.prov-sect1 p{
-    width: 900px;
-    font-size: 20px;
-    
-}
-.prov-sect2{
+  }
+  .sect4-container p {
+    width: 600px;
+  }
+  .footer-nav ul {
     display: flex;
     flex-flow: row;
-    margin: 100px;
-    padding: 40px;
-    border: solid black;
-    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .footer-redes {
+    margin-top: 20px;
+  }
 }
-.prov-sect2-left{
-    display: flex;
-    flex-flow: column;
-}
-.prov-sect2-left img{
-    width: 400px;
-    height: auto;
-}
-.prov-sect2-left h5{
-    font-size: 20px;
-}
-.prov-sect2-left p{
-    font-size: 16px;
-    width: 400px;
-}
-.prov-sect2-right{
-    display: flex;
-    flex-flow: column;
+/* FIN de CSS para pagina de index.html */
+/* INICIO de CSS para pagina de memorialdigital.html */
+/* mobile version */
+.md-box-2 {
+  margin: 40px;
 }
 
+.md-titulo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.md-titulo h1 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.md-sect1-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.ejemplositio {
+  margin-top: 30px;
+  height: 200px;
+}
+
+/* Tablet version */
+@media all and (min-width: 468px) {
+  .md-titulo h1 {
+    font-size: 35px;
+  }
+  .md-titulo p {
+    font-size: 20px;
+  }
+  .ejemplositio {
+    height: 280px;
+  }
+}
+/* Desktop version */
+@media all and (min-width: 768px) {
+  .md-sect1-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  .ejemplositio {
+    height: 350px;
+  }
+}
+/* FIN de CSS para pagina de memorialdigital.html */
+/* INICIO de CSS para pagina de proveedores.html */
+.prov-sect1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.prov-sect1 h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.prov-sect1 p {
+  width: 900px;
+  font-size: 20px;
+}
+
+.prov-sect2 {
+  display: flex;
+  flex-flow: row;
+  margin: 100px;
+  padding: 40px;
+  border: solid black;
+  justify-content: space-around;
+}
+
+.prov-sect2-left {
+  display: flex;
+  flex-flow: column;
+}
+
+.prov-sect2-left img {
+  width: 400px;
+  height: auto;
+}
+
+.prov-sect2-left h5 {
+  font-size: 20px;
+}
+
+.prov-sect2-left p {
+  font-size: 16px;
+  width: 400px;
+}
+
+.prov-sect2-right {
+  display: flex;
+  flex-flow: column;
+}
 
 /* FIN de CSS para pagina de proveedores.html */
-
-
-
-
 /* INICIO de CSS para pagina de productos.html */
-.prod-sect1{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.prod-sect1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 
+.prod-sect1 p {
+  max-width: 800px;
 }
-.prod-sect1 p{
-max-width: 800px;
+
+.prod-sect2 {
+  display: flex;
+  flex-flow: column;
+  margin: 100px;
 }
-.prod-sect2{
-    display: flex;
-    flex-flow: column;
-    margin: 100px;
-}
+
 /* FIN de CSS para pagina de productos.html */
-
-
-
-
 /* INICIO de CSS para pagina de contacto.html */
-
-
-
 /* mobile version */
-
-.contacto-box-2{
-    margin: 20px;
-}
-.contacto-sect1{
-    text-align: center;
-    margin-bottom: 15px;
-}
-.contacto-sect2{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-.contacto-sect2-left{
-    margin-bottom: 20px;
+.contacto-box-2 {
+  margin: 20px;
 }
 
+.contacto-sect1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contacto-sect2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.contacto-sect2-left {
+  margin-bottom: 20px;
+}
 
 /* tablet version */
 @media all and (min-width: 468px) {
-    .mapa iframe{
-        width: 350px;
-    }
+  .mapa iframe {
+    width: 350px;
+  }
 }
-
 /* desktop version */
 @media all and (min-width: 768px) {
-    .contacto-sect2{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-    }
-    .mapa iframe{
-        width: 500px;
-    }
+  .contacto-sect2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  .mapa iframe {
+    width: 500px;
+  }
 }
 /* FIN de CSS para pagina de contacto.html */
-
-
-
 /* INICIO de CSS para el footer en todas las páginas */
-footer{
-    background-color: #7f465c;
-}
-.footer-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.footer-nav ul{
-    list-style: none;
-}
-.footer-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    padding: 10px;
-}
-.footer-redes{
-    color: #d8d8d8;
-}
-.redes a{
-    color: #d8d8d8;
+footer {
+  background-color: #7f465c;
 }
 
-.subir{
-    height: 50px;
-    width: 50px;
-    background-color: #7f465c;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    text-align: center;
-    font-size: 30px;
-    line-height: 50px;
-    color: white;
-    border: 3px solid floralwhite;
-    border-radius: 50%;
-    box-shadow: 0 0 5px white;
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.footer-redes {
+  color: #d8d8d8;
+}
+
+.redes a {
+  color: #d8d8d8;
+}
+
+.subir {
+  height: 50px;
+  width: 50px;
+  background-color: #7f465c;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  color: white;
+  border: 3px solid floralwhite;
+  border-radius: 50%;
+  box-shadow: 0 0 5px white;
 }
 
 /* FIN de CSS para el footer en todas las páginas */
+
+/*# sourceMappingURL=estilo.css.map */
