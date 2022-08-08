@@ -1,7 +1,7 @@
 $color1: #7f465c;
 $color2: #295767;
 $font1: sans-serif;
-
+$font-sizes: ("small": 12px, "normal": 18px, "large": 24px, "xl": 40px);
 
 /* Bootstrap code for css */
 .navbar{
@@ -9,7 +9,7 @@ $font1: sans-serif;
 }
 
 h1{
-    font-size: 40px;
+    font-size: map-get($font-sizes, xl);
 }
 .col-sm-6{
     padding: 10px;
@@ -68,6 +68,18 @@ html{
     border-style: solid;
     border-radius:15px;
 }
+.boton--a{
+	@extend .boton;
+	background-color:green;
+	color:white;
+}
+
+.boton--b{
+	@extend .boton;
+	background-color:$color2;
+	color:black;
+}
+
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -241,7 +253,7 @@ a:hover {
 
 }
 .sect1-container h1{
-    font-size: 40px;
+    font-size: map-get($font-sizes, xl);
     margin-bottom: 40px;
 }
 .sect1-container ol{

@@ -33,7 +33,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.boton {
+.boton, .boton--b, .boton--a {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -47,6 +47,16 @@ html {
   border-width: 3px;
   border-style: solid;
   border-radius: 15px;
+}
+
+.boton--a {
+  background-color: green;
+  color: white;
+}
+
+.boton--b {
+  background-color: #295767;
+  color: black;
 }
 
 @keyframes bounce {
@@ -63,7 +73,7 @@ html {
     transform: translateY(-10px);
   }
 }
-.boton:hover {
+.boton:hover, .boton--a:hover, .boton--b:hover {
   animation: bounce 1.5s;
 }
 
