@@ -2,6 +2,11 @@ $color1: #7f465c;
 $color2: #295767;
 $font1: sans-serif;
 $font-sizes: ("small": 12px, "normal": 18px, "large": 24px, "xl": 40px);
+@mixin flex-flow{
+	display:flex;
+	flex-flow: column;
+
+}
 
 /* Bootstrap code for css */
 .navbar{
@@ -21,8 +26,7 @@ h1{
 
 
 .zonadeimg{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     align-items: center;
     
 }
@@ -70,7 +74,7 @@ html{
 }
 .boton--a{
 	@extend .boton;
-	background-color:green;
+	background-color: $color1;
 	color:white;
 }
 
@@ -292,29 +296,20 @@ a:hover {
 
 
 .sect3-container{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
     margin-bottom: 100px;
 }
 .zonadeimg{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     align-items: center;
     
 }
-.elementos-cajas{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 .elementos-cajas{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
 }
 .caja{
     border: solid black;
@@ -397,8 +392,7 @@ a:hover {
         height: 350px;
     }
     .elementos-cajas{
-        display: flex;
-        flex-flow: column;
+        @include flex-flow;
         align-items: center;
         
     }
@@ -434,8 +428,7 @@ a:hover {
 
 
     .sect2-container{
-        display: flex;
-        flex-flow: column;
+        @include flex-flow;
         align-items: center;
     }
     .sect2-container h2{
@@ -465,8 +458,7 @@ a:hover {
 
 
     .sect4-container{
-        display: flex;
-        flex-flow: column;
+        @include flex-flow;
         align-items: center;
 
     }
@@ -507,8 +499,7 @@ a:hover {
 }
 
 .md-titulo{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     align-items: center;
     margin-bottom: 15px;
 }
@@ -517,8 +508,7 @@ a:hover {
     margin-bottom: 15px;
 }
 .md-sect1-container{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     align-items: center;
 }
 .ejemplositio{
@@ -562,8 +552,7 @@ a:hover {
 
 /* INICIO de CSS para pagina de proveedores.html */
 .prov-sect1{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     align-items: center;
 }
 .prov-sect1 h1{
@@ -585,8 +574,7 @@ a:hover {
     justify-content: space-around;
 }
 .prov-sect2-left{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
 }
 .prov-sect2-left img{
     width: 400px;
@@ -600,8 +588,7 @@ a:hover {
     width: 400px;
 }
 .prov-sect2-right{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
 }
 
 
@@ -612,8 +599,7 @@ a:hover {
 
 /* INICIO de CSS para pagina de productos.html */
 .prod-sect1{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     align-items: center;
 
 }
@@ -621,8 +607,7 @@ a:hover {
 max-width: 800px;
 }
 .prod-sect2{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     margin: 100px;
 }
 /* FIN de CSS para pagina de productos.html */
@@ -644,8 +629,7 @@ max-width: 800px;
     margin-bottom: 15px;
 }
 .contacto-sect2{
-    display: flex;
-    flex-flow: column;
+    @include flex-flow;
     align-items: center;
 }
 .contacto-sect2-left{
