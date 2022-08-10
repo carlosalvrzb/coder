@@ -460,7 +460,7 @@ a:hover {
 }
 /* FIN de CSS para pagina de memorialdigital.html */
 /* INICIO de CSS para pagina de proveedores.html */
-.prov-sect1 {
+/* .prov-sect1 {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -508,10 +508,64 @@ a:hover {
 .prov-sect2-right {
   display: flex;
   flex-flow: column;
+} */
+
+.prov-sect1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 20px
 }
+
+.prov-sect1 h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.prov-sect1 p {
+  width: auto;
+  font-size: 20px;
+}
+
+.prov-sect2{
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content:center;
+}
+.prov-sect2-right iframe{
+  width: 220px;
+  align-items: center;
+}
+
+/* Tablet version */
+@media all and (min-width: 468px) {
+
+
+  .prov-sect2-right iframe{
+    width: 380px;
+    align-items: center;
+  }
+}
+/* Desktop version */
+@media all and (min-width: 768px) {
+  .prov-sect2{
+    margin: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content:center;
+  }
+}
+
+
+
 
 /* FIN de CSS para pagina de proveedores.html */
 /* INICIO de CSS para pagina de productos.html */
+.contenido-productos{
+  margin: 20px;
+}
 .prod-sect1 {
   display: flex;
   flex-flow: column;
